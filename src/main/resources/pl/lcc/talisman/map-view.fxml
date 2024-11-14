@@ -33,14 +33,10 @@
 -->
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
-<?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.Tab?>
-<?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.TilePane?>
@@ -89,49 +85,12 @@
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-            <SplitPane dividerPositions="0.749741468459152" prefHeight="633.0" prefWidth="969.0">
-              <items>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="631.0" prefWidth="708.0">
-                     <children>
-                        <TilePane fx:id="mapPane" onMouseClicked="#mapClicked" prefHeight="550.0" prefWidth="650.0" />
-                     </children>
-                  </AnchorPane>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-                     <children>
-                        <TabPane layoutY="7.0" tabClosingPolicy="UNAVAILABLE">
-                          <tabs>
-                            <Tab closable="false" text="Terrain">
-                              <content>
-                                    <VBox>
-                                       <children>
-                                          <Button mnemonicParsing="false" text="Button" />
-                                          <Button mnemonicParsing="false" text="Button" />
-                                       </children>
-                                    </VBox>
-                              </content>
-                            </Tab>
-                            <Tab closable="false" text="Unit">
-                              <content>
-                                    <VBox>
-                                       <children>
-                                          <Button mnemonicParsing="false" text="Button" />
-                                          <Button mnemonicParsing="false" text="Button" />
-                                          <Button mnemonicParsing="false" text="Button" />
-                                       </children>
-                                    </VBox>
-                              </content>
-                            </Tab>
-                          </tabs>
-                        </TabPane>
-                     </children></AnchorPane>
-              </items>
-            </SplitPane>
+            <TilePane fx:id="mapPane" prefHeight="550.0" prefWidth="650.0" />
       </children>
     </AnchorPane>
       <ToolBar prefHeight="40.0" prefWidth="200.0">
         <items>
-          <Button mnemonicParsing="false" onAction="#lowClick" text="Button" />
-            <ComboBox fx:id="comboChoice" onAction="#onChoice" prefWidth="150.0" />
+          <Button mnemonicParsing="false" onAction="#lowClick" text="Start Game" />
         </items>
       </ToolBar>
   </children>
