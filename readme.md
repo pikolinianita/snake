@@ -1,11 +1,11 @@
 # Readme
 
-Snake game, java fx. 
+Snake game, javaFX. 
 
 ### How to install
 
 - Java 22
-- Java fx 22
+- JavaFX 22
 - no idea, it works for me. 
 
 ### How to play
