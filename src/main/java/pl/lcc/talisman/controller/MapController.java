@@ -12,10 +12,6 @@ public class MapController {
 
     private TheMap theMap;
 
-    public void initialize(){
-
-    }
-
     @FXML
     public void startButtonClick() {
         theMap = Engine.getInstance().initializeAndCreateMap(13,11, 50, 30, this::updateMap);

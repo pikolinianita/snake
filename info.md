@@ -40,7 +40,6 @@ classDiagram
     class MapController {
         +TilePane mapPane
         +TheMap theMap
-        +void initialize()
         +void startButtonClick()
         +void updateMap()
     }
