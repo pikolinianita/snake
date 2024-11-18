@@ -68,7 +68,7 @@ public class Engine {
             body.addFirst(newHead);
             internalMap.get(last.y() * mapWidth + last.x()).set(0, "empty");
             internalMap.get(newHead.y() * mapWidth + newHead.x()).set(0, direction.getCode());
-            displayMap.setAllTiles(internalMap);
+            displayMap.updateAllTiles(internalMap);
             updateMapCallback.run();
         }
     }
@@ -107,7 +107,7 @@ public class Engine {
         this.mapHeight = mapHeight;
         displayMap = new TheMap(mapWidth, mapHeight, tileWidth, tileHeight);
         setUpGame();
-        displayMap.setAllTiles(internalMap);
+        displayMap.updateAllTiles(internalMap);
         setUpdateCallBack(updateMap);
         return displayMap;
     }

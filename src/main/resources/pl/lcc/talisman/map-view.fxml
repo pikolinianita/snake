@@ -90,7 +90,7 @@
     </AnchorPane>
       <ToolBar prefHeight="40.0" prefWidth="200.0">
         <items>
-          <Button mnemonicParsing="false" onAction="#lowClick" text="Start Game" />
+          <Button mnemonicParsing="false" onAction="#startButtonClick" text="Start Game" />
         </items>
       </ToolBar>
   </children>

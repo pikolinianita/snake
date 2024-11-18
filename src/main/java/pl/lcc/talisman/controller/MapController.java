@@ -17,7 +17,7 @@ public class MapController {
     }
 
     @FXML
-    public void lowClick() {
+    public void startButtonClick() {
         theMap = Engine.getInstance().initializeAndCreateMap(13,11, 50, 30, this::updateMap);
         mapPane.getChildren().addAll(theMap.getTiles());
         mapPane.getScene().setOnKeyPressed((type)-> Engine.getInstance().processKey(type.getCode()));

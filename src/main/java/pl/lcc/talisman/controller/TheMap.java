@@ -25,11 +25,11 @@ public class TheMap {
         return tiles;
     }
 
-    public void UpdateTile(int pos, String... codes){
+    public void updateTile(int pos, String... codes){
             tiles.set(pos, setTile(codes[0]));
     }
 
-    public void setAllTiles(List<List<String>> codes){
+    public void updateAllTiles(List<List<String>> codes){
         tiles = codes.stream().map(list-> (Node) setTile(list.get(0))).toList();
     }
 
